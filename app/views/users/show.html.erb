@@ -1,0 +1,10 @@
+<h1> <%= @user %> </h1>
+
+<h3>Expenses:</h3>
+<%= render @user.costs %>
+
+
+<h3>New expense</h3>
+<% @cost = Cost.new %>
+<%= render 'costs/form' %>
+

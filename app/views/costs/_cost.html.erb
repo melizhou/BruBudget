@@ -1,0 +1,19 @@
+<table>
+ <tr>
+    <th>Date </th>
+    <th>Item </th>
+    <th> Price</th>
+    <th colspan="3"></th>
+  </tr>
+
+    <tr>
+      <td><%= cost.date %></td>
+      <td><%= cost.item %></td>
+      <td><%= cost.price %></td>
+       <td><%= link_to 'Edit', edit_user_cost_path(cost.user, cost) %></td>
+      <td><%= link_to 'Delete', [cost.user, cost],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+
+</table>
